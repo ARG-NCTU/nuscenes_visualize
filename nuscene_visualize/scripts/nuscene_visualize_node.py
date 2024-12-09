@@ -53,6 +53,7 @@ class NuscenesVisualizationNode:
         
     def read_params(self):
         self.nuscenes_dir = rospy.get_param("~NUSCENES_DIR", '/data/nuscene')
+        self.nuscenes_dir = os.path.expanduser(self.nuscenes_dir)
         self.nuscenes_version = rospy.get_param("~NUSCENES_VER", 'v1.0-trainval')
         self.update_frequency = float(rospy.get_param("~UPDATE_FREQUENCY", 8.0))
 

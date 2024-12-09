@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-    <arg name="NUSCENES_DIR" default="/data/nuscene"/>
+    <arg name="NUSCENES_DIR" default="~/perception-fusion/datasets/nuscene/trainval"/>
     <arg name="NUSCENES_VER" default="v1.0-trainval"/>
     <arg name="UPDATE_FREQUENCY" default="4.0"/>
 
